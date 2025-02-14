@@ -1,0 +1,17 @@
+:root {
+  --color-accent: #f13e3e;
+  --background: seashell;
+  --not-active-color: color-mix(
+    in srgb,
+    var(--color-accent, hotpink),
+    transparent 30%
+  );
+  --padding: max(1rem, 1, 66vw);
+  --default-ease: var(--ease-in-out-quart);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.page-wrapper {
+  height: auto;
+  background-color: var(--background);
+}

@@ -5,8 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
-  <body>
-    <h3 class="header">Hello World!</h3>
+  <body class="page-wrapper">
+    <div class="smooth-scroll">
+      <header id="header" class="header is-open">
+        <div class="header-left">
+          <a href="/" class="header-logo">Cosmin</a>
+          <div class="header-email">
+            <a href="mailto:cosminv.nicola@gmail.com"
+              >cosminv.nicola@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="header-inner">
+          <button class="header-trigger">Menu</button>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item is-active">
+                <a href="/" class="header-link">bla</a>
+              </li>
+              <li class="header-item">
+                <a href="/" class="header-link">bla</a>
+              </li>
+              <li class="header-item">
+                <a href="/" class="header-link">bla</a>
+              </li>
+              <li class="mobile-only"><hr /></li>
+              <li class="header-item mobile-only">
+                <ul class="socials">
+                  <li>
+                    <strong>Socials</strong>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Cosmin-Valentin" target="_blank"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      target="https://www.instagram.com/parsuldetampa/"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/nicolacosmin/"
+                      target="_blank"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-only"><hr /></li>
+              <li class="header-item mobile-only">
+                <a href="mailto:cosminv.nicola@gmail.com"
+                  >cosminv.nicola@gmail.com</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main" class="main"></main>
+      <footer id="footer" class="footer"></footer>
+    </div>
   </body>
 </html>
