@@ -6,12 +6,46 @@
     var(--color-accent, hotpink),
     transparent 30%
   );
-  --padding: max(1rem, 1, 66vw);
+  --padding: max(1rem, 1.66vw);
   --default-ease: var(--ease-in-out-quart);
   --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@font-face {
+  font-family: 'aFont';
+  src: url('fonts/bueno-regular.woff') format('woff'),
+    url('fonts/bueno-regular.ttf') format('truetype'),
+    url('fonts/bueno-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bFont';
+  src: url('fonts/impact.ttf') format('truetype'),
+    url('fonts/impacted.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'cFont';
+  src: url('fonts/din-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .page-wrapper {
   height: auto;
   background-color: var(--background);
+  font-family: 'aFont', 'bFont', 'cFont', sans-serif;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }
