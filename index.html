@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="tailwind-normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
   <body class="page-wrapper">
     <div class="smooth-scroll">
-      <header id="header" class="header is-open">
+      <header id="header" class="header">
         <div class="header-left large-body">
           <a href="/" class="header-logo">Cosmin</a>
           <div class="header-email">
@@ -80,7 +81,60 @@
           </nav>
         </div>
       </header>
-      <main id="main" class="main"></main>
+      <main id="main" class="main">
+        <section class="about-header">
+          <section class="scroll-heading">
+            <h2>
+              <span>
+                About
+                <br />
+                me
+              </span>
+            </h2>
+          </section>
+        </section>
+        <section class="about-media-body">
+          <div class="about-media-inner">
+            <div class="media" style="--count: 2">
+              <div class="media-photo" style="--index: 1">
+                <img
+                  src="images/image1.jpg"
+                  alt="Image of Cosmin in a green shirt"
+                />
+              </div>
+              <div class="media-photo" style="--index: 2">
+                <img
+                  src="images/image2.jpg"
+                  alt="Image of Cosmin in a white shirt"
+                />
+              </div>
+            </div>
+            <div class="content">
+              <p>
+                Passionate about technology and problem-solving, I have a
+                diverse background spanning technical support, web development,
+                and project coordination.
+              </p>
+              <p>
+                With hands-on experience in Laravel, JavaScript, and PHP, I
+                enjoy building efficient and scalable solutions. Recently, I’ve
+                started exploring Java and Spring Boot, expanding my backend
+                development skills.
+              </p>
+              <p>
+                My ability to quickly adapt to new technologies, coupled with a
+                keen eye for optimization, makes me a valuable asset in any
+                development team.
+              </p>
+              <p>
+                Eager to grow as a developer, I am ready to take on new
+                challenges, collaborate with like-minded professionals, and
+                contribute to impactful projects.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer id="footer" class="footer">
         <div class="footer-top">
           <a class="large-hero" href="/">Cosmin Nicola</a>
@@ -94,7 +148,7 @@
           </dl>
           <div class="right">
             <p class="small-heading">
-              "Have a collaboration in mind ?"
+              Have a collaboration in mind ?
               <br />
               <span class="email">
                 <span inert class="arrow">→ </span>

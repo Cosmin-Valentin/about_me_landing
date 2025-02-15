@@ -1,0 +1,123 @@
+.about-header {
+  padding: clamp(4rem, 5.6vw, 5vh) 0 0;
+  color: var(--color-accent);
+  min-height: 100svh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: end;
+}
+
+.about-header .scroll-heading {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  padding-top: var(--padding);
+  color: var(--color-accent);
+  mix-blend-mode: multiply;
+  width: 100%;
+  align-self: start;
+}
+
+.scroll-heading h2 {
+  text-transform: uppercase;
+  font-size: max(2rem, 4.2vw);
+  line-height: 1;
+}
+
+.scroll-heading span {
+  display: block;
+  transform-origin: top center;
+  font-weight: 600;
+}
+
+.about-media-body {
+  padding: calc(var(--padding) * 2) var(--padding) 0;
+  margin-top: 11vw;
+}
+
+.about-media-inner {
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--padding);
+}
+
+.about-media-body .media {
+  grid-column: 1 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-media-body .media-photo {
+  flex-shrink: 0;
+  width: 16vw;
+  overflow: hidden;
+  border-radius: 1rem;
+  transform: rotate(0);
+  animation-name: rotateIn;
+  animation-timeline: view(y);
+  animation-range: entry 0% cover 100%;
+  animation-fill-mode: both;
+}
+
+.about-media-body .media-photo img {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  animation: fadeIn 0.5s 0.1s ease-out forwards;
+}
+
+.about-media-body .content {
+  grid-column: 6 / 12;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: max(1.75rem, 2.8vw);
+  line-height: 0.9;
+}
+
+.about-media-body .content p:first-child {
+  color: var(--color-accent);
+}
+
+.about-media-body .content p ~ p {
+  font-size: max(1.25rem, 1.7vw);
+  line-height: 1;
+}
+
+.about-media-body .content p + p {
+  margin-top: 1em;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(calc(sin(var(--count) * var(--index)) * -10deg))
+      scale(1.5);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-header {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  .about-media-body .media {
+    padding: 4rem 0;
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .about-media-body .content {
+    grid-column: 1 / 13;
+  }
+}
