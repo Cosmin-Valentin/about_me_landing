@@ -12,6 +12,11 @@
   position: sticky;
   top: 100px;
   z-index: 1;
+  transition: transform 0.5s ease-in-out;
+}
+
+.framer.scaled {
+  transform: scale(0.95);
 }
 
 .framer-static {
@@ -152,6 +157,7 @@
   position: relative;
   font-size: 18px;
   color: rgba(17, 16, 17, 0.6);
+  font-family: 'Lora';
 }
 
 .framer-text .features {
@@ -207,6 +213,7 @@
   font-size: 18px;
   color: rgb(17, 16, 17);
   line-height: 150%;
+  font-family: 'Lora';
 }
 
 .framer-image {

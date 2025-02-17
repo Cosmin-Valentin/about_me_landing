@@ -90,7 +90,6 @@
 .media-body .content {
   grid-column: 6 / 12;
   font-weight: 600;
-  text-transform: uppercase;
   font-size: max(1.75rem, 2.8vw);
   line-height: 0.9;
 }

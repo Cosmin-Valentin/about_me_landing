@@ -1,6 +1,6 @@
 :root {
-  --color-accent: #f13e3e;
-  --background: seashell;
+  --color-accent: #2c446f;
+  --background: #f5f5ff;
   --not-active-color: color-mix(
     in srgb,
     var(--color-accent, hotpink),
@@ -33,6 +33,14 @@
 @font-face {
   font-family: 'cFont';
   src: url('fonts/din-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/lora.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
