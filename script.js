@@ -1,7 +1,3 @@
-document.querySelector('.header-trigger')?.addEventListener('click', () => {
-  document.getElementById('header')?.classList.toggle('is-open')
-})
-
 const heading = document.querySelector('.projects .scroll-heading')
 const projectsInner = document.querySelector('.projects-inner')
 const lastFrame = document.querySelector(
@@ -50,6 +46,10 @@ if (heading && projectsInner && lastFrame) {
     })
   }
 }
+
+document.querySelector('.header-trigger')?.addEventListener('click', () => {
+  document.getElementById('header')?.classList.toggle('is-open')
+})
 
 document.querySelector('.header-link').addEventListener('click', function (e) {
   e.preventDefault()
