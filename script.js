@@ -50,3 +50,13 @@ if (heading && projectsInner && lastFrame) {
     })
   }
 }
+
+document.querySelector('.header-link').addEventListener('click', function (e) {
+  e.preventDefault()
+  if (window.innerWidth < 1025) {
+    document.getElementById('header')?.classList.toggle('is-open')
+  }
+  document
+    .querySelector('section.projects')
+    .scrollIntoView({ behavior: 'smooth', block: 'start' })
+})

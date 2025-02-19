@@ -85,7 +85,7 @@ a {
   flex-wrap: wrap;
 }
 
-.header-list:has(li.is-active) a {
+.header-list a {
   color: var(--not-active-color);
 }
 
@@ -96,7 +96,8 @@ a {
   text-transform: uppercase;
 }
 
-.header li.is-active a {
+.header li a:hover,
+.header li a:focus {
   color: var(--color-accent);
   text-decoration-color: var(--color-accent);
 }
