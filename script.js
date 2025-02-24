@@ -60,3 +60,20 @@ document.querySelector('.header-link').addEventListener('click', function (e) {
     .querySelector('section.projects')
     .scrollIntoView({ behavior: 'smooth', block: 'start' })
 })
+
+function showModal(event, targetUrl) {
+  event.preventDefault()
+
+  const modal = document.getElementById('modal')
+  modal.style.display = 'flex'
+  modal.setAttribute('data-url', targetUrl)
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal')
+  modal.style.display = 'none'
+  const targetUrl = modal.getAttribute('data-url')
+  if (targetUrl) {
+    window.open(targetUrl, '_blank')
+  }
+}

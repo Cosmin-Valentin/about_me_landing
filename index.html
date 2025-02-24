@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="projects.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="modal.css" />
   </head>
   <body class="page-wrapper">
     <div class="smooth-scroll">
@@ -139,11 +140,9 @@
                       <div class="head-text">
                         <h3>BrasovRocks</h3>
                         <p>
-                          My first Spring Boot application, created as part of
-                          the Java Explorer and Generația Tech alumni program—a
-                          Digital Nation project in partnership with leading
-                          Romanian companies. This project solidified my
-                          understanding of core Spring Boot concepts.
+                          First Spring Boot application, created as part of the
+                          Generația Tech program—a Digital Nation project in
+                          partnership with leading Romanian companies.
                         </p>
                       </div>
                       <div class="features">
@@ -194,7 +193,10 @@
                         </div>
                       </div>
                     </div>
-                    <a href="https://brasov-rocks.onrender.com" target="_blank">
+                    <a
+                      href="https://brasov-rocks.onrender.com"
+                      onclick="showModal(event, this.href)"
+                    >
                       <div class="project-link-container">
                         <p>View Project</p>
                         <svg
@@ -549,6 +551,17 @@
           <p class="copyright">© 2025 Cosmin Nicola</p>
         </div>
       </footer>
+    </div>
+    <div id="modal">
+      <div class="modal-content">
+        <h2>Preparing Application:</h2>
+        <p>
+          The application you are being redirected to requires a brief
+          deployment period. Please allow 2-3 minutes for it to become
+          available. I appreciate your patience.
+        </p>
+        <button onclick="closeModal()">Continue</button>
+      </div>
     </div>
   </body>
 </html>
