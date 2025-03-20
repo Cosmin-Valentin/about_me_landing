@@ -35,6 +35,10 @@
   position: relative;
 }
 
+.work-ongoing .framer-static {
+  background-color: #f8e1e7;
+}
+
 .work-one .framer-static {
   background-color: rgb(244, 242, 239);
 }
