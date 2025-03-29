@@ -33,9 +33,11 @@
   overflow: hidden;
   padding: 64px 0 64px 64px;
   position: relative;
+  background: linear-gradient(to bottom, #eee 0%, #bbb 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.work-ongoing .framer-static {
+/* .work-ongoing .framer-static {
   background-color: #f8e1e7;
 }
 
@@ -53,7 +55,7 @@
 
 .work-four .framer-static {
   background-color: rgb(210, 232, 200);
-}
+} */
 
 .framer-about {
   opacity: 1;
